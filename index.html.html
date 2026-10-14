@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박태희의 모바일 명함</title>
+    <!-- 폰트와 아이콘을 불러오기 위한 링크 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* 전체 배경 및 폰트 설정 */
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            color: #333;
+        }
+
+        /* 명함 카드 컨테이너 */
+        .card {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 350px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            padding: 40px 20px;
+            box-sizing: border-box;
+        }
+
+        /* 이름 */
+        .name {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 5px;
+            color: #111;
+        }
+
+        /* 짧은 소개말 */
+        .subtitle {
+            font-size: 14px;
+            color: #6c757d;
+            margin-bottom: 25px;
+        }
+
+        /* 정보 리스트 */
+        .info-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 25px;
+            text-align: left;
+        }
+
+        .info-list li {
+            padding: 12px 15px;
+            border-bottom: 1px solid #f1f3f5;
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+        }
+
+        .info-list li:last-child {
+            border-bottom: none;
+        }
+
+        .info-list i {
+            width: 25px;
+            color: #4dabf7;
+            font-size: 18px;
+            margin-right: 10px;
+            text-align: center;
+        }
+
+        /* 인스타그램 버튼 */
+        .insta-btn {
+            display: block;
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+
+        .insta-btn:hover {
+            transform: scale(1.02);
+        }
+
+        .insta-btn i {
+            margin-right: 8px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <!-- 이름 -->
+        <h1 class="name">박태희</h1>
+        <p class="subtitle">안녕하세요! 만나서 반갑습니다.</p>
+
+        <!-- 개인정보 목록 -->
+        <ul class="info-list">
+            <li>
+                <i class="fa-solid fa-calendar-alt"></i>
+                <strong>나이:</strong> &nbsp; 23세
+            </li>
+            <li>
+                <i class="fa-solid fa-venus-mars"></i>
+                <strong>성별:</strong> &nbsp; 여성
+            </li>
+        </ul>
+
+        <!-- 인스타그램 링크 변경됨 -->
+        <a href="https://instagram.com/hee.pisode?obrf=dDc2OHNxdHVmdTJo&utm_source=qr" target="_blank" class="insta-btn">
+            <i class="fa-brands fa-instagram"></i> Instagram 방문하기
+        </a>
+    </div>
+
+</body>
+</html>
